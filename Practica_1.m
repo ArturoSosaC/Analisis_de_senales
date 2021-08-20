@@ -2,9 +2,9 @@
 % 1, a)
 
 figure(1)
-ta = linspace(-3,3);
-ya = 5*(t.^2) + 2*t;
-plot(ta,ya)
+t = linspace(-3,3);
+x = @(t) 5*(t.^2) + 2*t;
+plot(t,x(t))
 
 xlabel('t')
 ylabel('x(t)')
@@ -15,9 +15,9 @@ title('5t^2 + 2t')
 figure(2)
 f = input('Frecuencia: ');
 a = input('Amplitud: ');
-tb = linspace(-2*pi, 2*pi);
-yb = a*sin(f*t);
-plot(tb,yb)
+t = linspace(-2*pi, 2*pi);
+y = @(t) a*sin(f*t);
+plot(t,y(t))
 
 xlabel('t')
 ylabel('x(t)')

@@ -1,6 +1,7 @@
 % Practica 1
 %%% Ejercicio 2, a)
 
+% a)
 figure(1)
 t = linspace(-3,3);
 x = @(t) 5*(t.^2) + 2*t;
@@ -16,6 +17,7 @@ plot(t,y(t),t,y2(t))
 
 hold off
 
+% b)
 figure(2)
 plot(t,x(t))
 xlabel('t')
@@ -29,6 +31,7 @@ plot(t,g(t))
 
 hold off
 
+% c)
 figure(3)
 plot(t,x(t))
 xlabel('t')
@@ -42,6 +45,7 @@ plot(t,p(t))
 
 hold off
 
+% d)
 figure(4)
 plot(t,x(t))
 xlabel('t')
@@ -68,6 +72,7 @@ plot(t,s(t))
 
 hold off
 
+% e)
 figure(6)
 plot(t,x(t))
 xlabel('t')
@@ -81,6 +86,7 @@ plot(t,m(t))
 
 hold off
 
+% f)
 figure(7)
 plot(t,x(t))
 xlabel('t')
